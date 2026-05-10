@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Shoes | Каталог</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта с логотипом и основной навигацией -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html" aria-label="Elegance Shoes">
+                <span class="logo__icon">ES</span>
+                <span class="logo__text">Elegance Shoes</span>
+            </a>
+
+            <nav class="navbar" aria-label="Главное меню">
+                <a class="navbar__link" href="index.html">Главная</a>
+                <a class="navbar__link navbar__link--active" href="catalog.html">Каталог</a>
+                <a class="navbar__link" href="about.html">О магазине</a>
+                <a class="navbar__link" href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <p class="section-label">Каталог</p>
+                <h1>Женская обувь</h1>
+                <p>Подберите модель для офиса, прогулки, вечера или повседневного образа.</p>
+            </div>
+        </section>
+
+        <!-- Карточки товаров каталога -->
+        <section class="section">
+            <div class="container catalog-shell">
+                <aside class="catalog-panel">
+                    <div class="catalog-panel__title">
+                        <span class="catalog-icon">⌁</span>
+                        <div>
+                            <p class="section-label">Навигация</p>
+                            <h2>Категории</h2>
+                        </div>
+                    </div>
+                    <div class="catalog-filters" aria-label="Категории обуви">
+                        <button class="catalog-filter catalog-filter--active" type="button" data-category="all">Все модели</button>
+                        <button class="catalog-filter" type="button" data-category="casual">Повседневная</button>
+                        <button class="catalog-filter" type="button" data-category="sport">Спортивная</button>
+                        <button class="catalog-filter" type="button" data-category="classic">Классическая</button>
+                        <button class="catalog-filter" type="button" data-category="evening">Вечерняя</button>
+                        <button class="catalog-filter" type="button" data-category="season">Сезонная</button>
+                    </div>
+                    <div class="catalog-note">
+                        <strong>Совет</strong>
+                        <p>Выберите категорию, чтобы быстро найти подходящую пару по стилю и назначению.</p>
+                    </div>
+                </aside>
+
+                <div class="catalog-content">
+                    <div class="catalog-toolbar">
+                        <button class="catalog-open-button" type="button" data-category="all">
+                            <span>☰</span>
+                            Открыть весь каталог
+                        </button>
+                        <p>Найдено моделей: <strong id="catalogCount">12</strong></p>
+                    </div>
+
+                    <div class="catalog-section-heading">
+                        <p class="section-label">Подборка</p>
+                        <h2 id="catalogTitle">Все модели</h2>
+                    </div>
+
+                    <div class="product-grid catalog-grid">
+                <article class="product-card" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80" alt="Бежевые туфли-лодочки">
+                    <div class="product-card__body">
+                        <span class="product-badge">Классическая</span>
+                        <h3>Туфли-лодочки Classic Beige</h3>
+                        <p class="product-card__price">129 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="evening">
+                    <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=900&q=80" alt="Женские босоножки на каблуке">
+                    <div class="product-card__body">
+                        <span class="product-badge">Вечерняя</span>
+                        <h3>Босоножки Summer Light</h3>
+                        <p class="product-card__price">98 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="season">
+                    <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=900&q=80" alt="Женские ботильоны">
+                    <div class="product-card__body">
+                        <span class="product-badge">Сезонная</span>
+                        <h3>Ботильоны Urban Rose</h3>
+                        <p class="product-card__price">165 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="casual">
+                    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80" alt="Женские кеды">
+                    <div class="product-card__body">
+                        <span class="product-badge">Повседневная</span>
+                        <h3>Кеды Daily Comfort</h3>
+                        <p class="product-card__price">89 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="season">
+                    <img src="https://images.unsplash.com/photo-1596703263926-eb0762ee17e4?auto=format&fit=crop&w=900&q=80" alt="Женские сапоги">
+                    <div class="product-card__body">
+                        <span class="product-badge">Сезонная</span>
+                        <h3>Сапоги Winter Grace</h3>
+                        <p class="product-card__price">210 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1562273138-f46be4ebdf33?auto=format&fit=crop&w=900&q=80" alt="Женские балетки">
+                    <div class="product-card__body">
+                        <span class="product-badge">Классическая</span>
+                        <h3>Балетки Soft Step</h3>
+                        <p class="product-card__price">74 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sport">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Женские спортивные кроссовки">
+                    <div class="product-card__body">
+                        <span class="product-badge">Спортивная</span>
+                        <h3>Кроссовки Active Move</h3>
+                        <p class="product-card__price">118 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="casual">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=900&q=80" alt="Женские лоферы">
+                    <div class="product-card__body">
+                        <span class="product-badge">Повседневная</span>
+                        <h3>Лоферы City Walk</h3>
+                        <p class="product-card__price">105 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="sport">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80" alt="Белые кроссовки">
+                    <div class="product-card__body">
+                        <span class="product-badge">Спортивная</span>
+                        <h3>Кроссовки White Pulse</h3>
+                        <p class="product-card__price">132 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="evening">
+                    <img src="https://images.unsplash.com/photo-1565814636199-ae8133055c1c?auto=format&fit=crop&w=900&q=80" alt="Черные вечерние туфли">
+                    <div class="product-card__body">
+                        <span class="product-badge">Вечерняя</span>
+                        <h3>Туфли Night Velvet</h3>
+                        <p class="product-card__price">149 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="casual">
+                    <img src="https://images.unsplash.com/photo-1494955464529-790512c65305?auto=format&fit=crop&w=900&q=80" alt="Женские слипоны">
+                    <div class="product-card__body">
+                        <span class="product-badge">Повседневная</span>
+                        <h3>Слипоны Easy Day</h3>
+                        <p class="product-card__price">82 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="classic">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=900&q=80" alt="Женские туфли на устойчивом каблуке">
+                    <div class="product-card__body">
+                        <span class="product-badge">Классическая</span>
+                        <h3>Туфли Office Charm</h3>
+                        <p class="product-card__price">136 AZN</p>
+                        <button class="button button--outline product-details" type="button">Подробнее</button>
+                    </div>
+                </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Общий футер для всех страниц -->
+    <footer class="footer">
+        <div class="container footer__top">
+            <div class="footer__brand">
+                <a class="logo logo--footer" href="index.html" aria-label="Elegance Shoes">
+                    <span class="logo__icon">ES</span>
+                    <span class="logo__text">Elegance Shoes</span>
+                </a>
+                <p>Интернет-магазин женской обуви с удобной справочной системой, каталогом и консультацией по подбору моделей.</p>
+                <div class="socials" aria-label="Социальные сети">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="TikTok">TT</a>
+                    <a href="#" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О магазине</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+            <div class="footer__column">
+                <h3>Контакты</h3>
+                <p>+994 12 555 45 45</p>
+                <p>info@eleganceshoes.az</p>
+                <p>г. Баку, ул. Низами, 24</p>
+                <p>Пн-Сб, 10:00-20:00</p>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Подписка на новости</h3>
+                <p>Получайте информацию о новых моделях, сезонных скидках и специальных предложениях.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" aria-label="Email для подписки" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 Elegance Shoes. Все права защищены.</p>
+            <p>Разработка онлайновой информационно-справочной системы для интернет-магазина женской обуви.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

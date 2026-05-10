@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Shoes | Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта с логотипом и основной навигацией -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html" aria-label="Elegance Shoes">
+                <span class="logo__icon">ES</span>
+                <span class="logo__text">Elegance Shoes</span>
+            </a>
+
+            <nav class="navbar" aria-label="Главное меню">
+                <a class="navbar__link" href="index.html">Главная</a>
+                <a class="navbar__link" href="catalog.html">Каталог</a>
+                <a class="navbar__link" href="about.html">О магазине</a>
+                <a class="navbar__link navbar__link--active" href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <p class="section-label">Контакты</p>
+                <h1>Свяжитесь с нами</h1>
+                <p>Задайте вопрос о размере, наличии модели, доставке или оплате.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container contact-layout">
+                <!-- Форма обратной связи -->
+                <form class="contact-form" action="#" method="post" id="contactForm">
+                    <label>
+                        Ваше имя
+                        <input type="text" name="name" placeholder="Введите имя" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" placeholder="example@mail.com" required>
+                    </label>
+                    <label>
+                        Сообщение
+                        <textarea name="message" rows="6" placeholder="Напишите ваш вопрос" required></textarea>
+                    </label>
+                    <button class="button button--primary" type="submit">Отправить</button>
+                </form>
+
+                <!-- Контактная информация магазина -->
+                <aside class="contact-card">
+                    <h2>Информация</h2>
+                    <p><strong>Телефон:</strong> +994 12 555 45 45</p>
+                    <p><strong>Email:</strong> info@eleganceshoes.az</p>
+                    <p><strong>Адрес:</strong> г. Баку, ул. Низами, 24</p>
+                    <p><strong>Время работы:</strong> Пн-Сб, 10:00-20:00</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Карта расположения магазина -->
+        <section class="map-section">
+            <div class="container">
+                <iframe
+                    title="Карта: Баку, улица Низами"
+                    src="https://www.google.com/maps?q=Baku%20Nizami%20Street&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Общий футер для всех страниц -->
+    <footer class="footer">
+        <div class="container footer__top">
+            <div class="footer__brand">
+                <a class="logo logo--footer" href="index.html" aria-label="Elegance Shoes">
+                    <span class="logo__icon">ES</span>
+                    <span class="logo__text">Elegance Shoes</span>
+                </a>
+                <p>Интернет-магазин женской обуви с удобной справочной системой, каталогом и консультацией по подбору моделей.</p>
+                <div class="socials" aria-label="Социальные сети">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="TikTok">TT</a>
+                    <a href="#" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О магазине</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+            <div class="footer__column">
+                <h3>Контакты</h3>
+                <p>+994 12 555 45 45</p>
+                <p>info@eleganceshoes.az</p>
+                <p>г. Баку, ул. Низами, 24</p>
+                <p>Пн-Сб, 10:00-20:00</p>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Подписка на новости</h3>
+                <p>Получайте информацию о новых моделях, сезонных скидках и специальных предложениях.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" aria-label="Email для подписки" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 Elegance Shoes. Все права защищены.</p>
+            <p>Разработка онлайновой информационно-справочной системы для интернет-магазина женской обуви.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Shoes | О магазине</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта с логотипом и основной навигацией -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html" aria-label="Elegance Shoes">
+                <span class="logo__icon">ES</span>
+                <span class="logo__text">Elegance Shoes</span>
+            </a>
+
+            <nav class="navbar" aria-label="Главное меню">
+                <a class="navbar__link" href="index.html">Главная</a>
+                <a class="navbar__link" href="catalog.html">Каталог</a>
+                <a class="navbar__link navbar__link--active" href="about.html">О магазине</a>
+                <a class="navbar__link" href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <p class="section-label">О магазине</p>
+                <h1>История, сервис и забота о клиентах</h1>
+                <p>Elegance Shoes развивает удобный онлайн-сервис для покупки женской обуви.</p>
+            </div>
+        </section>
+
+        <!-- История магазина -->
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <p class="section-label">История</p>
+                    <h2>От небольшого бутика до онлайн-каталога</h2>
+                </div>
+                <p class="lead">
+                    Магазин Elegance Shoes начал работу как локальный бутик женской обуви.
+                    С ростом ассортимента появилась необходимость в информационно-справочной
+                    системе, где покупатели могут изучить модели, цены, условия доставки
+                    и быстро связаться с консультантом.
+                </p>
+            </div>
+        </section>
+
+        <!-- Преимущества магазина -->
+        <section class="section section--soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Преимущества</p>
+                    <h2>Почему выбирают нас</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Актуальный ассортимент</h3>
+                        <p>Каталог регулярно обновляется с учетом сезона, модных тенденций и спроса.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Понятная информация</h3>
+                        <p>Для каждой модели указывается название, цена, изображение и описание.</p>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Удобная консультация</h3>
+                        <p>Покупатель может отправить вопрос через форму или связаться по телефону.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Информация о доставке и оплате -->
+        <section class="section">
+            <div class="container info-grid">
+                <article>
+                    <p class="section-label">Доставка</p>
+                    <h2>Быстро по Баку и регионам</h2>
+                    <p>
+                        Доставка по Баку выполняется курьером. В регионы Азербайджана заказы
+                        отправляются через партнерские службы доставки после подтверждения заказа.
+                    </p>
+                </article>
+                <article>
+                    <p class="section-label">Оплата</p>
+                    <h2>Удобные способы оплаты</h2>
+                    <p>
+                        Доступна оплата наличными при получении, банковской картой или переводом.
+                        Все детали заказа уточняются менеджером перед отправкой.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Общий футер для всех страниц -->
+    <footer class="footer">
+        <div class="container footer__top">
+            <div class="footer__brand">
+                <a class="logo logo--footer" href="index.html" aria-label="Elegance Shoes">
+                    <span class="logo__icon">ES</span>
+                    <span class="logo__text">Elegance Shoes</span>
+                </a>
+                <p>Интернет-магазин женской обуви с удобной справочной системой, каталогом и консультацией по подбору моделей.</p>
+                <div class="socials" aria-label="Социальные сети">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="TikTok">TT</a>
+                    <a href="#" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О магазине</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+            <div class="footer__column">
+                <h3>Контакты</h3>
+                <p>+994 12 555 45 45</p>
+                <p>info@eleganceshoes.az</p>
+                <p>г. Баку, ул. Низами, 24</p>
+                <p>Пн-Сб, 10:00-20:00</p>
+            </div>
+            <div class="footer__newsletter">
+                <h3>Подписка на новости</h3>
+                <p>Получайте информацию о новых моделях, сезонных скидках и специальных предложениях.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" aria-label="Email для подписки" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 Elegance Shoes. Все права защищены.</p>
+            <p>Разработка онлайновой информационно-справочной системы для интернет-магазина женской обуви.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

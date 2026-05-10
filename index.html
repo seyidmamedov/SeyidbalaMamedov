@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegance Shoes | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта с логотипом и основной навигацией -->
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="index.html" aria-label="Elegance Shoes">
+                <span class="logo__icon">ES</span>
+                <span class="logo__text">Elegance Shoes</span>
+            </a>
+
+            <nav class="navbar" aria-label="Главное меню">
+                <a class="navbar__link navbar__link--active" href="index.html">Главная</a>
+                <a class="navbar__link" href="catalog.html">Каталог</a>
+                <a class="navbar__link" href="about.html">О магазине</a>
+                <a class="navbar__link" href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главный баннер интернет-магазина -->
+        <section class="hero">
+            <div class="container hero__content">
+                <div class="hero__text">
+                    <p class="section-label">Информационно-справочная система</p>
+                    <h1>Женская обувь для стильного и уверенного образа</h1>
+                    <p>
+                        Elegance Shoes помогает быстро подобрать обувь по стилю, сезону,
+                        цене и назначению. На сайте собрана справочная информация о товарах,
+                        доставке, оплате и контактах магазина.
+                    </p>
+                    <a class="button button--primary" href="catalog.html">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Краткое описание магазина -->
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <p class="section-label">О проекте</p>
+                    <h2>Онлайновая система для удобного выбора обуви</h2>
+                </div>
+                <p class="lead">
+                    Наш сайт объединяет каталог, сведения о магазине, преимущества обслуживания
+                    и контактные данные. Покупатель может изучить модели, сравнить цены и быстро
+                    отправить запрос через форму обратной связи.
+                </p>
+            </div>
+        </section>
+
+        <!-- Популярные товары -->
+        <section class="section section--soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-label">Выбор покупателей</p>
+                    <h2>Популярные товары</h2>
+                </div>
+
+                <div class="product-grid product-grid--three">
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80" alt="Бежевые туфли-лодочки">
+                        <div class="product-card__body">
+                            <h3>Туфли-лодочки Classic Beige</h3>
+                            <p class="product-card__price">129 AZN</p>
+                            <a class="button button--outline" href="catalog.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?auto=format&fit=crop&w=900&q=80" alt="Женские босоножки">
+                        <div class="product-card__body">
+                            <h3>Босоножки Summer Light</h3>
+                            <p class="product-card__price">98 AZN</p>
+                            <a class="button button--outline" href="catalog.html">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=900&q=80" alt="Женские ботильоны">
+                        <div class="product-card__body">
+                            <h3>Ботильоны Urban Rose</h3>
+                            <p class="product-card__price">165 AZN</p>
+                            <a class="button button--outline" href="catalog.html">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Быстрый обзор ассортимента -->
+        <section class="section">
+            <div class="container">
+                <div class="section-heading section-heading--center">
+                    <p class="section-label">Разделы каталога</p>
+                    <h2>Найдите пару под любой случай</h2>
+                    <p class="lead">Система помогает быстро ориентироваться в ассортименте и выбирать обувь по назначению.</p>
+                </div>
+
+                <div class="category-grid">
+                    <a class="category-card" href="catalog.html">
+                        <span class="category-card__icon">⌁</span>
+                        <h3>Для офиса</h3>
+                        <p>Лодочки, балетки и элегантные модели для делового образа.</p>
+                    </a>
+                    <a class="category-card" href="catalog.html">
+                        <span class="category-card__icon">✦</span>
+                        <h3>На вечер</h3>
+                        <p>Акцентные туфли, босоножки и модели для особых мероприятий.</p>
+                    </a>
+                    <a class="category-card" href="catalog.html">
+                        <span class="category-card__icon">◇</span>
+                        <h3>На каждый день</h3>
+                        <p>Комфортные кеды, лоферы и обувь для прогулок по городу.</p>
+                    </a>
+                    <a class="category-card" href="catalog.html">
+                        <span class="category-card__icon">◌</span>
+                        <h3>Сезонные модели</h3>
+                        <p>Ботильоны, сапоги и устойчивые пары для прохладной погоды.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статистика магазина -->
+        <section class="stats-band">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <strong>1 200+</strong>
+                    <span>довольных покупательниц</span>
+                </div>
+                <div class="stat-item">
+                    <strong>80+</strong>
+                    <span>актуальных моделей</span>
+                </div>
+                <div class="stat-item">
+                    <strong>24 ч</strong>
+                    <span>быстрая обработка заказа</span>
+                </div>
+                <div class="stat-item">
+                    <strong>4.9</strong>
+                    <span>средняя оценка сервиса</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества сервиса -->
+        <section class="section">
+            <div class="container service-layout">
+                <div>
+                    <p class="section-label">Сервис</p>
+                    <h2>Информация о товаре под рукой</h2>
+                    <p class="lead">
+                        Справочная система делает выбор понятнее: в одном месте собраны модели,
+                        цены, контакты, условия доставки и данные для связи с консультантом.
+                    </p>
+                    <a class="button button--primary" href="about.html">Узнать о магазине</a>
+                </div>
+
+                <div class="service-list">
+                    <article class="service-item">
+                        <span>01</span>
+                        <div>
+                            <h3>Быстрый поиск информации</h3>
+                            <p>Пользователь сразу видит ключевые сведения о магазине и товарах.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <span>02</span>
+                        <div>
+                            <h3>Профессиональная консультация</h3>
+                            <p>Менеджер помогает уточнить размер, наличие и условия доставки.</p>
+                        </div>
+                    </article>
+                    <article class="service-item">
+                        <span>03</span>
+                        <div>
+                            <h3>Удобный путь к заказу</h3>
+                            <p>Каталог, контакты и форма связи связаны в единую структуру.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с образами -->
+        <section class="section section--soft">
+            <div class="container lookbook">
+                <div class="lookbook__image">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80" alt="Женский образ с обувью">
+                </div>
+                <div class="lookbook__content">
+                    <p class="section-label">Lookbook</p>
+                    <h2>Подборки для готовых образов</h2>
+                    <p>
+                        Витрина помогает представить обувь в реальных ситуациях: деловая встреча,
+                        прогулка, праздничный вечер или повседневный городской стиль.
+                    </p>
+                    <div class="tag-list">
+                        <span>Классика</span>
+                        <span>Комфорт</span>
+                        <span>Вечер</span>
+                        <span>Сезон</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Призыв к действию -->
+        <section class="section">
+            <div class="container cta-panel">
+                <div>
+                    <p class="section-label">Нужна помощь?</p>
+                    <h2>Подберем подходящую пару по стилю и размеру</h2>
+                    <p>Оставьте сообщение, и консультант подскажет доступные модели, цены и варианты доставки.</p>
+                </div>
+                <a class="button button--primary" href="contact.html">Связаться с нами</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Общий футер для всех страниц -->
+    <footer class="footer">
+        <div class="container footer__top">
+            <div class="footer__brand">
+                <a class="logo logo--footer" href="index.html" aria-label="Elegance Shoes">
+                    <span class="logo__icon">ES</span>
+                    <span class="logo__text">Elegance Shoes</span>
+                </a>
+                <p>Интернет-магазин женской обуви с удобной справочной системой, каталогом и консультацией по подбору моделей.</p>
+                <div class="socials" aria-label="Социальные сети">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="TikTok">TT</a>
+                    <a href="#" aria-label="WhatsApp">WA</a>
+                </div>
+            </div>
+
+            <div class="footer__column">
+                <h3>Быстрые ссылки</h3>
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О магазине</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div class="footer__column">
+                <h3>Контакты</h3>
+                <p>+994 12 555 45 45</p>
+                <p>info@eleganceshoes.az</p>
+                <p>г. Баку, ул. Низами, 24</p>
+                <p>Пн-Сб, 10:00-20:00</p>
+            </div>
+
+            <div class="footer__newsletter">
+                <h3>Подписка на новости</h3>
+                <p>Получайте информацию о новых моделях, сезонных скидках и специальных предложениях.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Ваш email" aria-label="Email для подписки" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>&copy; 2026 Elegance Shoes. Все права защищены.</p>
+            <p>Разработка онлайновой информационно-справочной системы для интернет-магазина женской обуви.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
