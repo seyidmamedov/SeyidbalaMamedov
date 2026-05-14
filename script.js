@@ -18,24 +18,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function filterCatalog(category) {
         var visibleCount = 0;
-
         catalogCards.forEach(function (card) {
             var isVisible = category === "all" || card.dataset.category === category;
             card.classList.toggle("is-hidden", !isVisible);
-
             if (isVisible) {
                 visibleCount += 1;
             }
         });
-
         document.querySelectorAll(".catalog-filter").forEach(function (button) {
             button.classList.toggle("catalog-filter--active", button.dataset.category === category);
         });
-
         if (catalogTitle) {
             catalogTitle.textContent = categoryNames[category] || "Каталог";
         }
-
         if (catalogCount) {
             catalogCount.textContent = visibleCount;
         }
