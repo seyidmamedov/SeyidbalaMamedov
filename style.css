@@ -874,22 +874,18 @@ a {
         align-items: flex-start;
         flex-direction: column;
     }
-
     .navbar {
         justify-content: flex-start;
     }
-
     .split,
     .info-grid,
     .contact-layout,
     .catalog-shell {
         grid-template-columns: 1fr;
     }
-
     .catalog-panel {
         position: static;
     }
-
     .product-grid,
     .product-grid--three,
     .feature-grid,
@@ -897,13 +893,11 @@ a {
     .stats-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
     .service-layout,
     .lookbook,
     .footer__top {
         grid-template-columns: 1fr;
     }
-
     .cta-panel {
         align-items: flex-start;
         flex-direction: column;
